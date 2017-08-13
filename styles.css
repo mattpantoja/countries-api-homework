@@ -28,7 +28,7 @@ img {
 
 /* Desktop Alignment */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 	.country-result .image {
 		float: left;
 		width: 30%;
