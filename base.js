@@ -25,10 +25,10 @@ $(document).ready(function(){
 		        	// Clear our results in case multiple searches
 		        	// are performed.
 		        	clearResults();
+		        	// For each result, loop through and create
+		        	// result item
 					$.each(data,function(index, value){
 						resultDisplay += "<div class='country-result'>";
-						// Note: Flag Data display will rely on 
-						console.log(data[index].flag );
 						resultDisplay += "<div class='image'><img alt='Flag for "+ data[index].name +"' class='country-flag' src=" + data[index].flag + "></div>";	
 						resultDisplay += "<div class='text'>";
 						resultDisplay += "<h2>" + data[index].name + "</h2>";
@@ -42,6 +42,8 @@ $(document).ready(function(){
 						resultDisplay += "</div>";
 						resultDisplay += "</div>";
 					});
+					// Once all results are created, append them to
+					// pre-existing results div
 					$(".results").append(resultDisplay);
 				},
 				// If call fails, display contact message
