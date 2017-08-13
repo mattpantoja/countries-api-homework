@@ -17,7 +17,7 @@ $(document).ready(function(){
 	    	clearResults();
 	    	noResults();
 	    } else {
-	        $.ajax({url: "https://restcountries.eu/rest/v2/name/" + countryName + "", 
+	        $.ajax({url: "https://restcountries.eu/rest/v2/name/" + countryName + "?fields=name;flag;nativeName;translations;capital;population", 
 	        	// If call is successful, display country data
 	        	success: function(data){
 		        	// Set Result Display variable for ease of readability
