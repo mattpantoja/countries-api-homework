@@ -26,19 +26,23 @@ img {
 	text-align: left;
 }
 
-.country-result .image {
-	float: left;
-	width: 30%;
-}
+/* Desktop Alignment */
 
-.country-result .text {
-	float: right;
-	width: 65%;
-}
+@media (max-width: 768px) {
+	.country-result .image {
+		float: left;
+		width: 30%;
+	}
 
-.country-result:after,
-.results:after {
-	content: '';
-	display: table;
-	clear: both;
+	.country-result .text {
+		float: right;
+		width: 65%;
+	}
+
+	.country-result:after,
+	.results:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
 }
