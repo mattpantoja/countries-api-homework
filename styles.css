@@ -17,6 +17,7 @@ main {
 /* Results Display */
 
 img {
+	margin-bottom: 1rem;
 	max-width: 100%;
 }
 
@@ -26,9 +27,16 @@ img {
 	text-align: left;
 }
 
+.country-result:last-of-type {
+	border-bottom: 0;
+}
+
 /* Desktop Alignment */
 
 @media (min-width: 768px) {
+	img {
+		margin-bottom: 0;
+	}
 	.country-result .image {
 		float: left;
 		width: 30%;
