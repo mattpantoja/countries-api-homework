@@ -1,0 +1,44 @@
+body {
+	background-color: #f0f0f0;
+}
+
+main {
+	padding: 3rem 0;
+	text-align: center;
+}
+
+/* Search Fields */
+.search-fields {
+	display: flex;
+	margin: 1rem auto 2rem;
+	max-width: 750px;
+}
+
+/* Results Display */
+
+img {
+	max-width: 100%;
+}
+
+.country-result {
+	border-bottom: 1px solid #333;
+	padding: 2rem 0;
+	text-align: left;
+}
+
+.country-result .image {
+	float: left;
+	width: 30%;
+}
+
+.country-result .text {
+	float: right;
+	width: 65%;
+}
+
+.country-result:after,
+.results:after {
+	content: '';
+	display: table;
+	clear: both;
+}
