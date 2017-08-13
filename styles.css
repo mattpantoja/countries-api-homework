@@ -18,6 +18,7 @@ main {
 
 img {
 	margin-bottom: 1rem;
+	max-height: 200px;
 	max-width: 100%;
 }
 
